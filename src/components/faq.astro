@@ -1,0 +1,154 @@
+
+<script is:inline>
+    import Alpine from "https://unpkg.com/alpinejs?module";
+    window.Alpine = Alpine;
+    Alpine.start();
+  </script>
+<section class="bg-indigo-900 text-white py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-4">FAQs</h2>
+    <p class="text-center text-indigo-200 mb-12">
+      Découvrez les réponses aux questions fréquemment posées sur notre IA Merkur.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- FAQ 1 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Avec quels outils Merkur ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Merkur s’intègre parfaitement avec des outils populaires comme HubSpot, Salesforce, Calendly et Google Calendar. Cela vous permet de centraliser vos interactions et d’optimiser votre gestion des leads. Profitez d’une expérience fluide et efficace.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Peut-on personnaliser les messages ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Oui, vous pouvez personnaliser les messages envoyés par l’IA. Merkur s’adapte à votre ton et suit votre script de conversion. Cela garantit une communication cohérente avec vos prospects.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Combien de leads gère ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Merkur peut gérer des centaines à des milliers de conversations simultanément. Cela se fait sans aucune intervention humaine, ce qui vous permet de vous concentrer sur d’autres tâches. L’efficacité est au cœur de notre technologie.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Comment tester Merkur ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Pour tester Merkur, inscrivez-vous pour une démo gratuite. Vous pourrez voir notre IA en action et découvrir ses fonctionnalités. C’est une excellente opportunité pour évaluer son impact sur votre activité.
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Quels sont les avantages ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Les avantages de Merkur incluent un engagement proactif avec vos leads et un suivi intelligent. Cela se traduit par un taux de conversion amélioré et un gain de temps pour votre équipe. Découvrez comment Merkur peut transformer votre processus de vente.
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Est-ce facile à utiliser ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Oui, Merkur est conçu pour être intuitif et facile à utiliser. Vous n’avez pas besoin de compétences techniques pour le mettre en place. Notre équipe est là pour vous accompagner à chaque étape.
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Y a-t-il un support ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Nous offrons un support client réactif pour répondre à toutes vos questions. Que ce soit par email ou par chat, notre équipe est disponible pour vous aider. Votre satisfaction est notre priorité.
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Comment fonctionne l’IA ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          L’IA de Merkur utilise des algorithmes avancés pour engager vos prospects. Elle analyse les interactions et s’adapte en temps réel pour maximiser les conversions. C’est une solution innovante pour booster votre activité.
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Quelles sont les statistiques ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Merkur fournit des statistiques avancées pour suivre vos conversions. Vous pouvez analyser les performances de vos campagnes et ajuster vos stratégies en conséquence. Cela vous permet d’optimiser vos efforts marketing.
+        </div>
+      </div>
+
+      <!-- FAQ 10 -->
+      <div x-data="{ open: false }" class="border-b border-indigo-700 pb-4">
+        <button @click="open = !open" class="flex justify-between w-full text-left font-semibold">
+          Quels secteurs sont concernés ?
+          <svg x-bind:class="{'rotate-180': open}" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div x-show="open" x-transition class="mt-2 text-sm text-indigo-200">
+          Merkur est adapté à divers secteurs, y compris l’immobilier, le e-commerce et les services. Quelle que soit votre industrie, notre IA peut vous aider à engager vos leads efficacement. Découvrez comment elle peut transformer votre approche.
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-16">
+      <p class="mb-3">Encore des questions ?</p>
+      <p class="text-indigo-200 mb-6">Contactez-nous pour plus d’informations.</p>
+      <a href="#" class="bg-white text-indigo-900 font-semibold px-6 py-2 rounded shadow">
+        Contact
+      </a>
+    </div>
+  </div>
+</section>
